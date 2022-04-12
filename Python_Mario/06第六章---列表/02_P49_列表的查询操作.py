@@ -60,27 +60,24 @@ lst3 = lst2[1:6:1]
 print('原列表id:',id(lst2))  # 输出：原列表id: 2663329914688
 print('新列表id:',id(lst3))  # 输出：新列表id: 2663329590656
 
+'''
+   4、列表元素的查询操作
+      ①、判断指定元素在列表中是否存在：
+               元素 ---> in ---> 列表名
+               元素 ---> not in ---> 列表名
+      ②、列表元素的遍历：
+               for 迭代变量 in 列表名：
+                      操作
+'''
+# ①、判断指定元素在列表中是否存在
+lst4 = [10,20,'python','Mario']
+print(10 in lst4)  # 输出：True
+print(10 not in lst4)  # 输出：False
+print(100 in lst4)  # 输出：False
+print(100 not in lst4)  # 输出：True
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# ②、列表元素的遍历
+lst5 = [10,20,'python','Mario']
+for item in lst5:
+    print(item)  # 依次输出：10、20、python、Mario
 
